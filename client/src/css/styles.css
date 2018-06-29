@@ -45,4 +45,44 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  font: 1em "Roboto",sans-serif;
+  color: #212121; }
+
+.link {
+  text-decoration: none;
+  color: #212121; }
+
+.title {
+  font: 1.5em "Patua One",display; }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 25vh;
+  background-color: #F5F5F5; }
+  .header .principal {
+    margin: 1em; }
+  .header .nav {
+    width: 100%; }
+    .header .nav .list {
+      display: flex;
+      width: 100%;
+      text-transform: uppercase;
+      justify-content: center; }
+      .header .nav .list .listItem {
+        width: 20%;
+        border: 1.25px solid #212121;
+        padding: 0.5em;
+        margin: 0 1em 1em 1em;
+        border-radius: 30px; }
+        .header .nav .list .listItem .login {
+          color: #00B0FF; }
+      .header .nav .list .loginItem {
+        border: 1.25px solid #00B0FF; }
+
 /*# sourceMappingURL=styles.css.map */
