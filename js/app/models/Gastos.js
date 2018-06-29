@@ -1,0 +1,5 @@
+class Gastos{
+
+    constructor(value,)
+
+}
