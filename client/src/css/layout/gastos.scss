@@ -1,0 +1,10 @@
+.resumo{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.gasto{
+		font: 2em "Patua One",sans-serif;
+	}
+}

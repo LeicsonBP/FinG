@@ -1,5 +1,5 @@
 body{
-    font: 1em "Roboto",sans-serif;
+    @extend %robotoFont;
     color: $colorBlack;
 }
 

@@ -1,0 +1,15 @@
+.loginForm{
+	@extend %formDefault;
+
+	.input{
+		@extend %inputDefault;
+	}
+
+	.input:nth-child(2){
+		margin: 1em 0 1em 0;
+	}
+
+	.button{
+		@extend %buttonDefault;
+	}
+}

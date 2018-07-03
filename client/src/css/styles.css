@@ -45,8 +45,39 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.loginForm .input, .insertForm .input, .loginForm .button, .insertForm .button, body {
+  font: 1em "Roboto",sans-serif; }
+
+.loginForm, .insertForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+
+.loginForm .input, .insertForm .input {
+  width: 80%;
+  height: 1em;
+  border: 1.25px solid #E0E0E0;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  padding: 1em; }
+
+.loginForm .button, .insertForm .button {
+  width: calc(80% + 2em);
+  height: 3em;
+  background-color: #00B0FF;
+  color: #FFFFFF;
+  border: 1.25px solid #00B0FF;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px; }
+
 body {
-  font: 1em "Roboto",sans-serif;
   color: #212121; }
 
 .link {
@@ -86,9 +117,33 @@ body {
         border: 1.25px solid #00B0FF; }
 
 .main {
-  padding: 2em; }
+  padding: 2em;
+  height: calc(75vh - 4em - 5vh); }
   .main .description {
     text-indent: 2em;
     text-align: justify; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  background-color: #212121; }
+  .footer .copyright {
+    margin: 1em;
+    font-size: 0.7em;
+    color: #FFFFFF; }
+
+.loginForm .input:nth-child(2) {
+  margin: 1em 0 1em 0; }
+
+.resumo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .resumo .gasto {
+    font: 2em "Patua One",sans-serif; }
 
 /*# sourceMappingURL=styles.css.map */

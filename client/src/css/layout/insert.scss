@@ -1,0 +1,11 @@
+.insertForm{
+	@extend %formDefault;
+
+	.input{
+		@extend %inputDefault;
+	}
+
+	.button{
+		@extend %buttonDefault;
+	}
+}

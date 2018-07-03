@@ -23,7 +23,7 @@
 
             .listItem{
                 width: 4em;
-                border: 1.25px solid $colorBlack;
+                @include border;
                 padding: 0.5em;
                 margin: 0 1em 1em 1em;
                 border-radius: 30px;
@@ -35,7 +35,7 @@
             }
 
             .loginItem{
-                border: 1.25px solid $colorBlue;
+                @include border($colorBlue);
             }
 
         }

@@ -1,0 +1,41 @@
+@mixin border($color: $colorBlack) {
+	border: 1.25px solid $color;
+}
+
+@mixin borderRadius($radius: 30px){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;
+}
+
+%robotoFont{
+	font: 1em "Roboto",sans-serif;
+}
+
+%formDefault{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+%inputDefault{
+	width: 80%;
+	height: 1em;
+	@include border($colorGreyS);
+	@include borderRadius(12px);
+	@extend %robotoFont;
+	padding: 1em;
+}
+
+%buttonDefault{
+	width: calc(80% + 2em);
+	height: 3em;
+	background-color: $colorBlue;
+	color: $colorWhite;
+	@include border($colorBlue);
+	@include borderRadius(12px);
+	@extend %robotoFont;
+}
