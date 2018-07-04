@@ -1,11 +1,35 @@
-.insertForm{
-	@extend %formDefault;
+.inserir{
+    width: 100%;
 
-	.input{
-		@extend %inputDefault;
-	}
+    .insertForm{
+        @extend %formDefault;
 
-	.button{
-		@extend %buttonDefault;
-	}
+        .input{
+            @extend %inputDefault;
+        }
+
+        .input:nth-child(2){
+            margin: 1rem 0 1rem 0;
+        }
+
+        .button{
+            @extend %buttonDefault;
+        }
+
+        .select{
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 0.90rem;
+            @extend %robotoFont;
+            @include border($colorGreyS);
+            @include borderRadius(12px);
+
+            .option{
+                background-color: $colorGrey;
+            }                           
+        }
+
+        
+    }
+
 }

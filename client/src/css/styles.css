@@ -45,29 +45,29 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.loginForm .input, .insertForm .input, .loginForm .button, .insertForm .button, body {
-  font: 1em "Roboto",sans-serif; }
+.loginSec .loginForm .input, .inserir .insertForm .input, .loginSec .loginForm .button, .inserir .insertForm .button, body, .inserir .insertForm .select {
+  font: 1rem "Roboto",sans-serif; }
 
-.loginForm, .insertForm {
+.loginSec .loginForm, .inserir .insertForm {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%; }
 
-.loginForm .input, .insertForm .input {
-  width: 80%;
-  height: 1em;
+.loginSec .loginForm .input, .inserir .insertForm .input {
+  width: calc(100% - 2.1rem);
+  height: 1rem;
   border: 1.25px solid #E0E0E0;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
   border-radius: 12px;
-  padding: 1em; }
+  padding: 1rem; }
 
-.loginForm .button, .insertForm .button {
-  width: calc(80% + 2em);
-  height: 3em;
+.loginSec .loginForm .button, .inserir .insertForm .button {
+  width: 100%;
+  height: 3rem;
   background-color: #00B0FF;
   color: #FFFFFF;
   border: 1.25px solid #00B0FF;
@@ -117,7 +117,10 @@ body {
         border: 1.25px solid #00B0FF; }
 
 .main {
-  padding: 2em;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: calc(75vh - 4em - 5vh); }
   .main .description {
     text-indent: 2em;
@@ -135,8 +138,10 @@ body {
     font-size: 0.7em;
     color: #FFFFFF; }
 
-.loginForm .input:nth-child(2) {
-  margin: 1em 0 1em 0; }
+.loginSec {
+  width: 100%; }
+  .loginSec .loginForm .input:nth-child(2) {
+    margin: 1em 0 1em 0; }
 
 .resumo {
   width: 100%;
@@ -145,5 +150,22 @@ body {
   align-items: center; }
   .resumo .gasto {
     font: 2em "Patua One",sans-serif; }
+
+.inserir {
+  width: 100%; }
+  .inserir .insertForm .input:nth-child(2) {
+    margin: 1rem 0 1rem 0; }
+  .inserir .insertForm .select {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.90rem;
+    border: 1.25px solid #E0E0E0;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    border-radius: 12px; }
+    .inserir .insertForm .select .option {
+      background-color: #F5F5F5; }
 
 /*# sourceMappingURL=styles.css.map */
