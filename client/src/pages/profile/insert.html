@@ -20,8 +20,8 @@
     <main class="main">
         <section class="section inserir"> 
             <form class="insertForm" method="get" accept-charset="utf-8">
-                <input type="number" name="value" class="input" placeholder="Digite o valor" required>
-                <input type="text" name="description" class="input" placeholder="Digite uma descrição" required>
+                <input type="text" name="value" class="input inputMoney" placeholder="Digite o valor" required>
+                <input type="text" name="description" class="input inputDesc" placeholder="Digite uma descrição" required>
                 <select name="month" class="select" required>
                     <option class="option" value="1">Janeiro</option>
                     <option class="option" value="2">Fevereiro</option>
@@ -37,6 +37,7 @@
                     <option class="option" value="12">Dezembro</option>
                 </select>
                 <button type="submit" class="button">Inserir</button>
+                <span class="message"></span>
             </form>           
         </section>
     </main>
@@ -44,5 +45,9 @@
 
         <small class="text copyright">Copyright Leicson Borges Palhano</small>
     </footer>
+    <script src="../../js/base/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/plugins/jquery.mask.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/app/models/masks.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/app/functions/insert.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

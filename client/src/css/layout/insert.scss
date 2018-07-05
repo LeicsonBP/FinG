@@ -16,6 +16,11 @@
             @extend %buttonDefault;
         }
 
+        .message{
+            display: none;
+            margin: 1em;
+        }
+
         .select{
             width: 100%;
             margin-bottom: 1rem;

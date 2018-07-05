@@ -87,6 +87,12 @@ body {
 .title {
   font: 1.5em "Patua One",display; }
 
+.blue {
+  color: #00B0FF; }
+
+.red {
+  color: #F44336; }
+
 .header {
   display: flex;
   flex-direction: column;
@@ -155,6 +161,9 @@ body {
   width: 100%; }
   .inserir .insertForm .input:nth-child(2) {
     margin: 1rem 0 1rem 0; }
+  .inserir .insertForm .message {
+    display: none;
+    margin: 1em; }
   .inserir .insertForm .select {
     width: 100%;
     margin-bottom: 1rem;

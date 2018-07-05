@@ -9,6 +9,4 @@ class Gastos{
         this._form=form;
     }
 
-    
-
 }
