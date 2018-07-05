@@ -22,16 +22,7 @@
         }
 
         .select{
-            width: 100%;
-            margin-bottom: 1rem;
-            padding: 0.90rem;
-            @extend %robotoFont;
-            @include border($colorGreyS);
-            @include borderRadius(12px);
-
-            .option{
-                background-color: $colorGrey;
-            }                           
+            @include select;                         
         }
 
         

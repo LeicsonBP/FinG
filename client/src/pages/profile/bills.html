@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+	<title>FinG - Gastos</title>
+    <link href="https://fonts.googleapis.com/css?family=Patua+One|Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title principal">FinG - Gastos</h1>
+        <aside class="nav">
+            <ul class="list">
+                <li class="listItem"><a class="link" href="resumo.html">Resumo</a></li>
+                <li class="listItem"><a class="link" href="insert.html">Inserir</a></li>
+            </ul>
+        </aside>
+    </header>
+    <main class="main">
+        <section class="section filter">
+            <form method="get" accept-charset="utf-8" class="filterForm">
+                <select name="year" class="select slcYear" required>
+                    <!--<option class="option" value="1900">1900</option>-->
+                </select>
+                <select name="month" class="select slcMonth" required>
+                    <option class="option" value="1">Janeiro</option>
+                    <option class="option" value="2">Fevereiro</option>
+                    <option class="option" value="3">Março</option>
+                    <option class="option" value="4">Abril</option>
+                    <option class="option" value="5">Maio</option>
+                    <option class="option" value="6">Junho</option>
+                    <option class="option" value="7">Julho</option>
+                    <option class="option" value="8">Agosto</option>
+                    <option class="option" value="9">Setembro</option>
+                    <option class="option" value="10">Outubro</option>
+                    <option class="option" value="11">Novembro</option>
+                    <option class="option" value="12">Dezembro</option>
+                </select>
+            </form>
+        </section>
+        <section class="section bills"> 
+            <table class="table">
+                <caption class="caption">Mês: <span class="tableMonth"></span></caption>
+                <thead>
+                    <tr class="lines">
+                        <th class="tableHeader description">Descrição</th>
+                        <th class="tableHeader valor">Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="lines" id="idtofinddatainbd">
+                        <td class="tableData description">Lancheria</td>
+                        <td class="tableData value">R$ 250.00</td>
+                    </tr>
+                    <tr class="lines" id="idtofinddatainbd">
+                        <td class="tableData description">Pizzaria</td>
+                        <td class="tableData value">R$ 120.00</td>
+                    </tr>
+                    <tr class="lines" id="idtofinddatainbd">
+                        <td class="tableData description">Submarino</td>
+                        <td class="tableData value">R$ 1.110.00</td>
+                    </tr>
+                    <tr class="lines" id="idtofinddatainbd">
+                        <td class="tableData description">Supermercado</td>
+                        <td class="tableData value">R$ 140.00</td>
+                    </tr>
+                    <tr class="lines" id="idtofinddatainbd">
+                        <td class="tableData description">Mercado Livre</td>
+                        <td class="tableData value">R$ 423.00</td>
+                    </tr>
+                    <tr class="lines" id="idtofinddatainbd">
+                        <td class="tableData description">Mercado</td>
+                        <td class="tableData value">R$ 75.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="footer">
+
+        <small class="text copyright">Copyright Leicson Borges Palhano</small>
+    </footer>
+</body>
+</html>

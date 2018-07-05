@@ -39,3 +39,17 @@
 	@include borderRadius(12px);
 	@extend %robotoFont;
 }
+
+@mixin select($width: 100%){
+	width: $width;
+	margin-bottom: 1rem;
+	padding: 0.90rem;
+	@extend %robotoFont;
+	@include border($colorGreyS);
+	@include borderRadius(12px);
+
+	.option{
+	    background-color: $colorWhite;
+	}
+}
+	

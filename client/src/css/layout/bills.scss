@@ -1,0 +1,59 @@
+.filter{
+	width: 100%;
+
+	.filterForm{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		.select{
+			@include select(45%);
+		}
+	}
+
+}
+
+.bills{
+	width: 100%;
+
+	.table{
+		width: 100%;
+
+		.caption{
+			width: calc(100% - 2rem);
+			padding: 1rem;
+			text-align: center;
+			background-color: $colorGrey;
+			font: 1.25rem "Patua One",display;
+			@include borderRadius;
+		}
+
+		.tableData{
+			padding: 0.5rem 0 0.5rem 0;
+		}
+
+		.tableHeader{
+			padding: 0.5rem 0 0.5rem 0;
+			font-size: 1rem;
+			font-weight: bold;
+		}
+
+		.description{
+			width: 70%;
+		}
+
+		.value{
+			width: 30%;
+			font-size: 0.9rem;
+		}
+
+		.valor{
+			width: 30%;
+		}
+
+		.lines{
+			width: 100%;
+			border-bottom: 2px solid $colorGreyS;
+		}
+	}
+}

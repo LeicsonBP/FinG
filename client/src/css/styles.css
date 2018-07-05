@@ -45,7 +45,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.loginSec .loginForm .input, .inserir .insertForm .input, .loginSec .loginForm .button, .inserir .insertForm .button, body, .inserir .insertForm .select {
+.loginSec .loginForm .input, .inserir .insertForm .input, .loginSec .loginForm .button, .inserir .insertForm .button, body, .inserir .insertForm .select, .filter .filterForm .select {
   font: 1rem "Roboto",sans-serif; }
 
 .loginSec .loginForm, .inserir .insertForm {
@@ -155,7 +155,8 @@ body {
   flex-direction: column;
   align-items: center; }
   .resumo .gasto {
-    font: 2em "Patua One",sans-serif; }
+    font: 2em "Patua One",sans-serif;
+    margin-bottom: 1em; }
 
 .inserir {
   width: 100%; }
@@ -175,6 +176,57 @@ body {
     -o-border-radius: 12px;
     border-radius: 12px; }
     .inserir .insertForm .select .option {
-      background-color: #F5F5F5; }
+      background-color: #FFFFFF; }
+
+.filter {
+  width: 100%; }
+  .filter .filterForm {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .filter .filterForm .select {
+      width: 45%;
+      margin-bottom: 1rem;
+      padding: 0.90rem;
+      border: 1.25px solid #E0E0E0;
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      -ms-border-radius: 12px;
+      -o-border-radius: 12px;
+      border-radius: 12px; }
+      .filter .filterForm .select .option {
+        background-color: #FFFFFF; }
+
+.bills {
+  width: 100%; }
+  .bills .table {
+    width: 100%; }
+    .bills .table .caption {
+      width: calc(100% - 2rem);
+      padding: 1rem;
+      text-align: center;
+      background-color: #F5F5F5;
+      font: 1.25rem "Patua One",display;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+      border-radius: 30px; }
+    .bills .table .tableData {
+      padding: 0.5rem 0 0.5rem 0; }
+    .bills .table .tableHeader {
+      padding: 0.5rem 0 0.5rem 0;
+      font-size: 1rem;
+      font-weight: bold; }
+    .bills .table .description {
+      width: 70%; }
+    .bills .table .value {
+      width: 30%;
+      font-size: 0.9rem; }
+    .bills .table .valor {
+      width: 30%; }
+    .bills .table .lines {
+      width: 100%;
+      border-bottom: 2px solid #E0E0E0; }
 
 /*# sourceMappingURL=styles.css.map */
